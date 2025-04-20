@@ -14,7 +14,7 @@ export default function CvSummary() {
   const [summary, setSummary] = useState<string>("")
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<string>("")
-  const [apiUrl, setApiUrl] = useState<string>("http://localhost:8000/upload") // external summarizer
+  const [apiUrl, setApiUrl] = useState<string>("https://hireguru-cv.onrender.com/upload") // external summarizer
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files.length > 0) {
@@ -121,11 +121,11 @@ export default function CvSummary() {
                   value={apiUrl}
                   onChange={handleApiUrlChange}
                   className="flex-1 p-2 border rounded-md"
-                  placeholder="e.g. http://localhost:8000/upload"
+                  placeholder="e.g. https://hireguru-cv.onrender.com/upload"
                 />
                 <Button
                   variant="outline"
-                  onClick={() => setApiUrl("http://localhost:8000/upload")}
+                  onClick={() => setApiUrl("https://hireguru-cv.onrender.com/upload")}
                   type="button"
                   size="sm"
                 >
