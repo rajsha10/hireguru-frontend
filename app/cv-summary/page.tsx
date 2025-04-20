@@ -110,7 +110,7 @@ export default function CvSummary() {
               <p className="text-xs text-gray-500">Upload your CV in PDF format.</p>
             </div>
 
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <label htmlFor="api-url" className="text-sm font-medium">
                 Summarizer API URL
               </label>
@@ -132,7 +132,7 @@ export default function CvSummary() {
                   Local
                 </Button>
               </div>
-            </div>
+            </div> */}
 
             <Button disabled={loading} type="submit">
               {loading ? "Generating..." : "Generate Summary"}
