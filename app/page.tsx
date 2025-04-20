@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react"
 import Link from "next/link"
 import { useAuth } from "@/contexts/auth-context"
+import { Cover } from "@/components/Cover"
 
 export default function Home() {
   const { user } = useAuth()
@@ -19,12 +20,14 @@ export default function Home() {
           <div className="relative">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6">
               AI-Powered Interview Platform for{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary">
-                Smarter Hiring
-              </span>
+              <Cover className="px-4 py-2">
+                <span className="bg-clip-text">
+                  Smarter Hiring
+                </span>
+              </Cover>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              InterviewIQ helps candidates prepare and companies hire better with AI-simulated interviews, real-time
+              HireGuru helps candidates prepare and companies hire better with AI-simulated interviews, real-time
               feedback, and comprehensive analytics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -59,7 +62,7 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-muted/50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Choose InterviewIQ?</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Choose HireGURU?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Our platform offers unique features designed to transform the interview process for both candidates and
               recruiters.
@@ -107,7 +110,7 @@ export default function Home() {
         <div className="container max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Interview Experience?</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of candidates and companies who are already using InterviewIQ to improve their hiring
+            Join thousands of candidates and companies who are already using HireGURU to improve their hiring
             process.
           </p>
           {user ? (

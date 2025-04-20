@@ -449,9 +449,9 @@ export default function CandidateDashboard() {
                 <Filter className="h-4 w-4" />
                 <span className="sr-only">Filter</span>
               </Button>
-              <Button onClick={() => router.push('/mock-interviews/new')}>
+              <Button onClick={() => router.push('/cv-summary')}>
                 <Sparkles className="mr-2 h-4 w-4" />
-                <span className="hidden sm:inline">Practice Interview</span>
+                <span className="hidden sm:inline">Summarize your Resume</span>
                 <span className="sm:hidden">Practice</span>
               </Button>
             </div>
