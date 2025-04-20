@@ -15,7 +15,7 @@ export default function QuizMainPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ num_questions: 4 }),
+        body: JSON.stringify({ num_questions: 20 }),
       })
 
       if (!response.ok) {
