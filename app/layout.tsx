@@ -8,7 +8,7 @@ import { AuthProvider } from "@/contexts/auth-context"
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: "InterviewIQ - AI-Powered Interview Platform",
+  title: "HireGuru",
   description: "Smarter Hiring. Faster Decisions.",
 }
 
